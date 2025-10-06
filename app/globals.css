@@ -1,3 +1,28 @@
+/* globals.css */
+
+/* 1️⃣ Tailwind base, components, utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 2️⃣ ستايلات عامة إضافية (اختياري) */
+html {
+  scroll-behavior: smooth; /* تمرير سلس */
+}
+
+body {
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white; /* وضع نهاري/ليلي */
+  font-family: 'Inter', sans-serif; /* خط عام للتطبيق */
+  margin: 0;
+  padding: 0;
+}
+
+/* روابط */
+a {
+  @apply text-blue-600 hover:underline;
+}
+
+/* أزرار عامة */
+button {
+  @apply cursor-pointer;
+}
