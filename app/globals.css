@@ -5,24 +5,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 2️⃣ ستايلات عامة إضافية (اختياري) */
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+}
 html {
-  scroll-behavior: smooth; /* تمرير سلس */
+  scroll-behavior: smooth; 
 }
 
 body {
-  @apply bg-white text-black dark:bg-gray-900 dark:text-white; /* وضع نهاري/ليلي */
-  font-family: 'Inter', sans-serif; /* خط عام للتطبيق */
+  @apply bg-white text-black dark:bg-gray-900 dark:text-white; 
+  font-family: 'Inter', sans-serif; 
   margin: 0;
   padding: 0;
 }
 
-/* روابط */
 a {
   @apply text-blue-600 hover:underline;
 }
 
-/* أزرار عامة */
 button {
   @apply cursor-pointer;
 }
