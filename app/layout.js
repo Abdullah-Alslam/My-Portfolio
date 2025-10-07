@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/website/Navbar";
-import { ThemeProvider } from "./components/website/ThemProvider";
+import Footer from "./components/website/Footer";
+import { ThemeProvider } from "./components/Dark mode/ThemProvider";
 
 export default function RootLayout({ children }) {
   return (
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         >
           <Navbar />
           <main>{children}</main>
+        <Footer/>
         </ThemeProvider>
       </body>
     </html>
