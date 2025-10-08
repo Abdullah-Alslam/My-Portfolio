@@ -62,50 +62,50 @@ export default function ProjectsPage() {
       </motion.section>
 
       {/* Projects Section */}
-      <section className="max-w-7xl mx-auto py-20 px-6 flex flex-col gap-14">
-        {/* الصف الأول: مشروعين */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="max-w-7xl mx-auto py-20 px-6 flex flex-col gap-12">
+        {/* row number 1 : tow projects*/}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projectsData.slice(0, 2).map((project, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8, scale: 1.02 }}
+              whileHover={{ y: -6, scale: 1.01 }}
               transition={{ type: "spring", stiffness: 200, damping: 16 }}
-              className="rounded-3xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 relative"
+              className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 relative"
             >
               <motion.img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-80 md:h-96 object-cover"
-                whileHover={{ scale: 1.03 }}
-                transition={{ duration: 0.35 }}
+                className="w-full h-64 md:h-72 object-cover"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
               />
 
-              <div className="p-6 text-center">
-                <h3 className="text-3xl font-extrabold mb-2 text-red-500">{project.title}</h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-4 text-lg">{project.description}</p>
+              <div className="p-4 text-center">
+                <h3 className="text-2xl font-extrabold mb-1 text-red-500">{project.title}</h3>
+                <p className="text-blue-600 dark:text-blue-400 mb-3 text-base">{project.description}</p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap justify-center gap-3 mb-6">
+                <div className="flex flex-wrap justify-center gap-2 mb-4">
                   {project.tags.map((t, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 rounded-full bg-black text-white text-sm font-medium"
+                      className="px-2 py-1 rounded-full bg-black text-white text-xs font-medium"
                     >
                       {t}
                     </span>
                   ))}
                 </div>
 
-                {/* Buttons بمسافة من التاغات */}
-                <div className="flex justify-between px-6 mt-4">
+                {/* Buttons */}
+                <div className="flex justify-between px-4 mt-2">
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-red-500 text-white font-semibold rounded-xl transition hover:bg-red-600"
+                    className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg transition hover:bg-red-600 text-sm"
                   >
                     Live Demo
                   </a>
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl transition hover:bg-blue-600"
+                    className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg transition hover:bg-blue-600 text-sm"
                   >
                     GitHub Code
                   </a>
@@ -123,46 +123,46 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        {/* الصف الثاني: مشروع واحد */}
+        {/* row numer 2 : Gaming Project*/}
         <div className="flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            whileHover={{ y: -8, scale: 1.02 }}
+            whileHover={{ y: -6, scale: 1.01 }}
             transition={{ type: "spring", stiffness: 200, damping: 16 }}
-            className="w-full md:w-1/2 lg:w-1/2 rounded-3xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 relative"
+            className="w-full md:w-1/2 lg:w-1/2 rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 relative"
           >
             <motion.img
               src={projectsData[2].image}
               alt={projectsData[2].title}
-              className="w-full h-80 object-cover"
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.35 }}
+              className="w-full h-64 md:h-72 object-cover"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             />
 
-            <div className="p-6 text-center">
-              <h3 className="text-3xl font-extrabold mb-2 text-red-500">{projectsData[2].title}</h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-4 text-lg">{projectsData[2].description}</p>
+            <div className="p-4 text-center">
+              <h3 className="text-2xl font-extrabold mb-1 text-red-500">{projectsData[2].title}</h3>
+              <p className="text-blue-600 dark:text-blue-400 mb-3 text-base">{projectsData[2].description}</p>
 
-              <div className="flex flex-wrap justify-center gap-3 mb-6">
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {projectsData[2].tags.map((t, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 rounded-full bg-black text-white text-sm font-medium"
+                    className="px-2 py-1 rounded-full bg-black text-white text-xs font-medium"
                   >
                     {t}
                   </span>
                 ))}
               </div>
 
-              {/* Buttons على الأطراف */}
-              <div className="flex justify-between px-6 mt-4">
+              {/* Buttons */}
+              <div className="flex justify-between px-4 mt-2">
                 <a
                   href={projectsData[2].demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-red-500 text-white font-semibold rounded-xl transition hover:bg-red-600"
+                  className="px-4 py-2 bg-red-500 text-white font-semibold rounded-lg transition hover:bg-red-600 text-sm"
                 >
                   Live Demo
                 </a>
@@ -170,7 +170,7 @@ export default function ProjectsPage() {
                   href={projectsData[2].code}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-xl transition hover:bg-blue-600"
+                  className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg transition hover:bg-blue-600 text-sm"
                 >
                   GitHub Code
                 </a>
@@ -180,7 +180,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      {/* خلفيات متحركة */}
+      {/* background*/}
       <motion.div
         className="absolute top-16 left-6 w-44 h-44 rounded-full bg-red-400/20 blur-3xl"
         animate={{ y: [0, 20, 0], scale: [1, 1.05, 1] }}
