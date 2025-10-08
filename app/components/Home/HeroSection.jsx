@@ -50,7 +50,7 @@ export default function HeroSection() {
 
       {/* Profile Image */}
       <motion.img
-        src="/profile2.jpg" // حط صورتك هنا
+        src="/profile2.jpg" 
         alt="Abdullah Abdalsalam"
         className="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-blue-600 dark:border-blue-400 object-cover shadow-2xl mb-8 md:mb-0 order-1 md:order-2"
         initial={{ scale: 0.85, opacity: 0 }}
