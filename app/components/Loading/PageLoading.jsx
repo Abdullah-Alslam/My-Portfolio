@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function PageLoader({ color = "#ffb320", bg = "black" }) {
+export default function PageLoading({ color = "#ffb320", bg = "black" }) {
   return (
     <motion.div
       className={`fixed inset-0 flex flex-col items-center justify-center ${bg} z-50`}
@@ -11,7 +11,7 @@ export default function PageLoader({ color = "#ffb320", bg = "black" }) {
       transition={{ duration: 0.8 }}
     >
       <motion.div
-        className={`text-5xl font-bold tracking-widest`}
+        className={`text-5xl font-bold tracking-widest text-white`}
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{
           scale: [0.8, 1.1, 1],
