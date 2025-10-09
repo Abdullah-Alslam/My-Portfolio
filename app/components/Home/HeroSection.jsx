@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -48,15 +49,21 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Profile Image */}
-      <motion.img
-        src="/profile2.jpg" 
-        alt="Abdullah Abdalsalam"
-        className="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-blue-600 dark:border-blue-400 object-cover shadow-2xl mb-8 md:mb-0 order-1 md:order-2"
+      {/* Profile Image with Next.js Image Optimization */}
+      <motion.div
         initial={{ scale: 0.85, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.7 }}
-      />
+        className="w-80 h-80 md:w-96 md:h-96 relative rounded-full border-4 border-blue-600 dark:border-blue-400 shadow-2xl mb-8 md:mb-0 order-1 md:order-2"
+      >
+        <Image
+          src="/profile2.jpg"
+          alt="Abdullah Abdalsalam"
+          fill
+          className="object-cover rounded-full"
+          priority
+        />
+      </motion.div>
     </section>
   );
 }
