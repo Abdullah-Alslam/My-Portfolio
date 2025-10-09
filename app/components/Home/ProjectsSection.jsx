@@ -29,19 +29,19 @@ export default function ProjectsSection() {
       transition={{ duration: 0.6 }}
       className="py-20 px-4 bg-white dark:bg-gray-900 text-center"
     >
-      <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+      <h2 className="text-3xl font-bold mb-12 text-gray-900 dark:text-white">
         Featured Projects
       </h2>
 
-      <div className="flex flex-col md:flex-row justify-center gap-6 mb-8">
+      <div className="flex flex-col md:flex-row justify-center gap-8 mb-8">
         {featuredProjects.map((proj) => (
           <motion.div
             key={proj.name}
-            className="bg-blue-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 flex flex-col gap-3 min-w-[220px]"
+            className="bg-blue-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 flex flex-col gap-4 min-w-[220px] shadow-lg hover:shadow-2xl transition-shadow duration-300"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 200, damping: 16 }}
           >
             <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
@@ -69,7 +69,7 @@ export default function ProjectsSection() {
 
       <Link
         href="/projects"
-        className="inline-block mt-4 text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+        className="inline-block mt-6 text-blue-600 dark:text-blue-400 font-semibold hover:underline"
       >
         See All Projects
       </Link>
