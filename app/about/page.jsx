@@ -1,6 +1,6 @@
 import AboutPageInfo from "../components/about/AboutPageInfo";
 
-// ✅ تعريف metadata
+// metadata
 export const metadata = {
   title: "About | Abdullah Abdalsalam Portfolio",
   description:
@@ -10,7 +10,8 @@ export const metadata = {
   robots: "index, follow",
   openGraph: {
     title: "About | Abdullah Abdalsalam Portfolio",
-    description: "Learn about Abdullah Abdalsalam, a passionate Frontend Developer.",
+    description:
+      "Learn about Abdullah Abdalsalam, a passionate Frontend Developer.",
     url: "https://my-portfolio-beryl-nine-29.vercel.app/about",
     type: "website",
     images: [
@@ -25,7 +26,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About | Abdullah Abdalsalam Portfolio",
-    description: "Learn about Abdullah Abdalsalam, a passionate Frontend Developer.",
+    description:
+      "Learn about Abdullah Abdalsalam, a passionate Frontend Developer.",
     image: "https://my-portfolio-beryl-nine-29.vercel.app/og-image.png",
   },
 };

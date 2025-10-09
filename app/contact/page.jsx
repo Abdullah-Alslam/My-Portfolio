@@ -1,7 +1,6 @@
 import ContactPageInfo from "../components/contact/ContactPageInfo";
 
-
-// ✅ تعريف metadata
+// metadata
 export const metadata = {
   title: "Contact | Abdullah Abdalsalam Portfolio",
   description:
@@ -32,7 +31,5 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  return (
-<ContactPageInfo/>
-  );
+  return <ContactPageInfo />;
 }

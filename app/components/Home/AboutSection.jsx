@@ -42,7 +42,9 @@ export default function AboutSection() {
             Abdullah Abdalsalam
           </span>
           , a passionate Frontend Developer who loves building{" "}
-          <span className="font-semibold text-black dark:text-white">interactive</span>
+          <span className="font-semibold text-black dark:text-white">
+            interactive
+          </span>
           ,{" "}
           <span className="font-semibold text-blue-500 dark:text-blue-300">
             responsive
@@ -50,7 +52,8 @@ export default function AboutSection() {
           , and visually appealing web experiences. I work mainly with{" "}
           <span className="font-semibold">Next.js</span>,{" "}
           <span className="font-semibold">React</span>,{" "}
-          <span className="font-semibold">TypeScript</span>, and modern web technologies.
+          <span className="font-semibold">TypeScript</span>, and modern web
+          technologies.
         </p>
 
         {/* Technologies Tags */}

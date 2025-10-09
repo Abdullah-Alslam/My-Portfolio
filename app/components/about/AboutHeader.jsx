@@ -14,7 +14,10 @@ export default function AboutHeader() {
         About Me
       </motion.h1>
       <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-        Hi! I'm Abdullah, a passionate Frontend Developer. I love building interactive, modern, and responsive web applications using React, Next.js, and Tailwind CSS. My goal is to create seamless user experiences and help businesses bring their ideas to life.
+        Hi! I'm Abdullah, a passionate Frontend Developer. I love building
+        interactive, modern, and responsive web applications using React,
+        Next.js, and Tailwind CSS. My goal is to create seamless user
+        experiences and help businesses bring their ideas to life.
       </p>
     </div>
   );

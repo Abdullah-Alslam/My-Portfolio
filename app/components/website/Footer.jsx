@@ -2,12 +2,25 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaPhoneAlt, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaPhoneAlt,
+  FaTelegramPlane,
+  FaEnvelope,
+} from "react-icons/fa";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <FaGithub size={24} />, href: "https://github.com/Abdullah-Alslam" },
-    { icon: <FaLinkedin size={24} />, href: "https://www.linkedin.com/in/abdullah-abdalslam-981633368" },
+    {
+      icon: <FaGithub size={24} />,
+      href: "https://github.com/Abdullah-Alslam",
+    },
+    {
+      icon: <FaLinkedin size={24} />,
+      href: "https://www.linkedin.com/in/abdullah-abdalslam-981633368",
+    },
     { icon: <FaTwitter size={24} />, href: "https://twitter.com/username" },
   ];
 
@@ -18,13 +31,16 @@ export default function Footer() {
         <div className="space-y-4">
           <h3 className="text-xl font-bold">Contact Me</h3>
           <p className="flex items-center gap-2">
-            <FaPhoneAlt className="text-blue-500 dark:text-blue-400" /> +963 991566773
+            <FaPhoneAlt className="text-blue-500 dark:text-blue-400" /> +963
+            991566773
           </p>
           <p className="flex items-center gap-2">
-            <FaTelegramPlane className="text-blue-500 dark:text-blue-400" /> @abdullah1895328
+            <FaTelegramPlane className="text-blue-500 dark:text-blue-400" />{" "}
+            @abdullah1895328
           </p>
           <p className="flex items-center gap-2">
-            <FaEnvelope className="text-blue-500 dark:text-blue-400" /> abdullah67xyzabc@gmail.com
+            <FaEnvelope className="text-blue-500 dark:text-blue-400" />{" "}
+            abdullah67xyzabc@gmail.com
           </p>
         </div>
 
@@ -33,22 +49,34 @@ export default function Footer() {
           <h3 className="text-xl font-bold">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/" className="hover:text-blue-500 dark:hover:text-blue-400 transition">
+              <Link
+                href="/"
+                className="hover:text-blue-500 dark:hover:text-blue-400 transition"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-blue-500 dark:hover:text-blue-400 transition">
+              <Link
+                href="/projects"
+                className="hover:text-blue-500 dark:hover:text-blue-400 transition"
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-blue-500 dark:hover:text-blue-400 transition">
+              <Link
+                href="/about"
+                className="hover:text-blue-500 dark:hover:text-blue-400 transition"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-blue-500 dark:hover:text-blue-400 transition">
+              <Link
+                href="/contact"
+                className="hover:text-blue-500 dark:hover:text-blue-400 transition"
+              >
                 Contact
               </Link>
             </li>

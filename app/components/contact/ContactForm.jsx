@@ -7,7 +7,11 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [sending, setSending] = useState(false);
 
   const handleChange = (e) =>
@@ -18,7 +22,12 @@ export default function ContactForm() {
     setSending(true);
 
     emailjs
-      .send("service_y7b134k", "template_r4l69sn", formData, "gWjvmkr5gtTUaSo21")
+      .send(
+        "service_y7b134k",
+        "template_r4l69sn",
+        formData,
+        "gWjvmkr5gtTUaSo21"
+      )
       .then(
         () => {
           toast.success("Message sent successfully ✅", {
@@ -50,10 +59,14 @@ export default function ContactForm() {
         transition={{ duration: 0.8 }}
         className="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-lg border border-gray-200 dark:border-gray-700"
       >
-        <h2 className="text-2xl font-semibold mb-6 text-blue-600">Send a Message</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-blue-600">
+          Send a Message
+        </h2>
 
         <div className="space-y-5">
-          <label htmlFor="name" className="sr-only">Name</label>
+          <label htmlFor="name" className="sr-only">
+            Name
+          </label>
           <input
             type="text"
             id="name"
@@ -65,7 +78,9 @@ export default function ContactForm() {
             required
           />
 
-          <label htmlFor="email" className="sr-only">Email</label>
+          <label htmlFor="email" className="sr-only">
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -77,7 +92,9 @@ export default function ContactForm() {
             required
           />
 
-          <label htmlFor="message" className="sr-only">Message</label>
+          <label htmlFor="message" className="sr-only">
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
@@ -95,7 +112,9 @@ export default function ContactForm() {
             whileTap={{ scale: 0.95 }}
             disabled={sending}
             className={`w-full py-3 rounded-lg font-semibold text-white shadow-md ${
-              sending ? "bg-gray-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
+              sending
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-blue-600 hover:bg-blue-700"
             }`}
           >
             {sending ? "Sending..." : "Send Message"}

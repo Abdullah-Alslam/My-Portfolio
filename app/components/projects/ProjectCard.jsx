@@ -9,7 +9,7 @@ export default function ProjectCard({ project, priority = false }) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      whileHover={{ y: -4, scale: 1.02 }} 
+      whileHover={{ y: -4, scale: 1.02 }}
       transition={{ type: "spring", stiffness: 180, damping: 16 }}
       className="rounded-2xl overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 transition-all duration-300 relative max-w-md mx-auto"
     >
@@ -19,18 +19,18 @@ export default function ProjectCard({ project, priority = false }) {
           alt={`${project.title} preview`}
           width={700}
           height={400}
-          className="w-full h-64 md:h-72 object-cover" 
+          className="w-full h-64 md:h-72 object-cover"
           {...(priority ? { priority: true } : { loading: "lazy" })}
           placeholder="blur"
           blurDataURL="/blur-placeholder.png"
         />
       </motion.div>
 
-      <div className="p-4 text-center"> 
-        <h3 className="text-2xl font-bold mb-2 text-red-500"> 
+      <div className="p-4 text-center">
+        <h3 className="text-2xl font-bold mb-2 text-red-500">
           {project.title}
         </h3>
-        <p className="text-blue-600 dark:text-blue-400 mb-3 text-base"> 
+        <p className="text-blue-600 dark:text-blue-400 mb-3 text-base">
           {project.description}
         </p>
 

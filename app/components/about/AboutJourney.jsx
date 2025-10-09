@@ -15,10 +15,16 @@ export default function AboutJourney() {
           My Journey
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          I started my journey in web development learning HTML, CSS, and JavaScript. Over time, I mastered React.js and Next.js, building projects that showcase my skills. I’m always eager to learn new technologies and improve my craft.
+          I started my journey in web development learning HTML, CSS, and
+          JavaScript. Over time, I mastered React.js and Next.js, building
+          projects that showcase my skills. I’m always eager to learn new
+          technologies and improve my craft.
         </p>
         <p className="text-gray-700 dark:text-gray-300">
-          I enjoy solving complex problems, optimizing web performance, and creating UI designs that users love. I’m also interested in contributing to open-source projects and collaborating with other developers.
+          I enjoy solving complex problems, optimizing web performance, and
+          creating UI designs that users love. I’m also interested in
+          contributing to open-source projects and collaborating with other
+          developers.
         </p>
       </motion.div>
       <motion.div

@@ -1,7 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaTelegramPlane, FaEnvelope, FaWhatsapp, FaInstagram } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaTelegramPlane,
+  FaEnvelope,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 
 export default function ContactInfo() {
   return (
@@ -11,7 +17,9 @@ export default function ContactInfo() {
       transition={{ duration: 0.8 }}
       className="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-lg border border-gray-200 dark:border-gray-700 h-full"
     >
-      <h2 className="text-2xl font-semibold mb-6 text-blue-600">Contact Information</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-blue-600">
+        Contact Information
+      </h2>
       <div className="space-y-5">
         <div className="flex items-center gap-4">
           <FaPhoneAlt className="text-blue-600 text-xl" />

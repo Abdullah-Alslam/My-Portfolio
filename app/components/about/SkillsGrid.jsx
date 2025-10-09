@@ -2,7 +2,14 @@
 
 import { motion } from "framer-motion";
 import { FaReact, FaBootstrap, FaGitAlt, FaNodeJs } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiJavascript, SiFirebase, SiMongodb, SiFramer } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiFirebase,
+  SiMongodb,
+  SiFramer,
+} from "react-icons/si";
 
 const skills = [
   { name: "React.js", icon: <FaReact />, color: "#61DBFB" },
@@ -36,7 +43,9 @@ export default function SkillsGrid() {
             whileHover={{ scale: 1.2 }}
           >
             <div className="text-3xl text-white">{skill.icon}</div>
-            <span className="mt-2 text-white text-sm font-semibold text-center">{skill.name}</span>
+            <span className="mt-2 text-white text-sm font-semibold text-center">
+              {skill.name}
+            </span>
           </motion.div>
         ))}
       </div>
