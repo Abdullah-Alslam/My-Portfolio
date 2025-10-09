@@ -1,16 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AboutHeader from "./AboutHeader";
 import AboutJourney from "./AboutJourney";
 import SkillsGrid from "./SkillsGrid";
+import PageWrapper from "../Loading/PageWarpper";
 
 export default function AboutPageInfo() {
 
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen overflow-hidden relative">
+    <PageWrapper>
+          <section className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen overflow-hidden relative">
       <AnimatePresence mode="wait">
         <motion.div
           key="content"
@@ -25,5 +26,7 @@ export default function AboutPageInfo() {
         </motion.div>
       </AnimatePresence>
     </section>
+
+</PageWrapper>
   );
 }
