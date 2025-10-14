@@ -48,12 +48,22 @@ export default function HeroSection() {
           >
             View Projects
           </Link>
+
           <Link
             href="/contact"
             className="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-medium hover:bg-blue-600 hover:text-white dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black transition"
           >
             Contact Me
           </Link>
+
+          {/* Download CV Button */}
+          <a
+            href="/Abdullah-Abdaslam-cv.pdf"
+            download
+            className="bg-green-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-green-700 dark:hover:bg-green-500 transition"
+          >
+            Download CV
+          </a>
         </motion.div>
       </div>
 
