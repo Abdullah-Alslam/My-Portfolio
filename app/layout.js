@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        {/* ThemeProvider لازم يلف كل المشروع */}
+        {/* ThemeProvider */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
