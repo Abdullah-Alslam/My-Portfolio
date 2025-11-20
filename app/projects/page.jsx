@@ -42,7 +42,7 @@ const projects = [
       "A full-stack eCommerce platform built with modern technologies for performance and scalability.",
     tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Redux"],
     image: "/E-commerce.png",
-    demo: "https://e-commerce-lime-phi-53.vercel.app",
+    demo: "https://e-commerce-two-liart-4fbqvqbaro.vercel.app",
     code: "https://github.com/Abdullah-Alslam/E-commerce",
   },
   {
