@@ -37,11 +37,11 @@ export const metadata = {
 // ✅ Projects Data
 const projects = [
   {
-    title: "eCommerce App",
+    title: "E-Commerce App",
     description:
       "A full-stack eCommerce platform built with modern technologies for performance and scalability.",
     tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Redux"],
-    image: "/e-commerce.png",
+    image: "/E-commerce.png",
     demo: "https://e-commerce-lime-phi-53.vercel.app",
     code: "https://github.com/Abdullah-Alslam/E-commerce",
   },
@@ -70,14 +70,14 @@ export default function ProjectsPage() {
     <PageWrapper>
       <HeroSection />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2">
         {/* row 1 : 2 projects*/}
         {projects.slice(0, 2).map((project, index) => (
           <ProjectCard key={index} project={project} priority={index === 0} />
         ))}
 
         {/* row 2 : 1 project*/}
-        <div className="md:col-span-2 flex justify-center">
+        <div className="flex justify-center md:col-span-2">
           <ProjectCard project={projects[2]} priority={false} />
         </div>
       </div>
