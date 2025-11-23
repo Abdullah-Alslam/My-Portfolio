@@ -40,7 +40,7 @@ const projects = [
     title: "E-Commerce App",
     description:
       "A full-stack eCommerce platform built with modern technologies for performance and scalability.",
-    tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Redux"],
+    tags: ["Next.js", "MongoDB", "Tailwind", "TypeScript", "Node js"],
     image: "/e-commerce.png",
     demo: "https://e-commerce-two-liart-4fbqvqbaro.vercel.app",
     code: "https://github.com/Abdullah-Alslam/E-commerce",
